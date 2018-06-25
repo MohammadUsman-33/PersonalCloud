@@ -1,0 +1,67 @@
+
+<div class='nav navbar-fixed-top col-lg-offset-2 '>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <!--<a class='glyphicon glyphicon-home' [routerLink]="['/home']"></a>-->
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse '>
+            <ul class='nav nav-justified'>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/home']">
+                        <span class='glyphicon glyphicon-plus-sign'></span> Create
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li [routerLinkActive]="['link-active']">
+                            <a [routerLink]="['/create']">
+                                <span class='glyphicon glyphicon-plus-sign'></span> Create
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/explorer']">
+                        <span class='glyphicon glyphicon-eye-open'></span> View
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-cloud-upload'></span> Upload
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-cloud-download'></span> Download
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-share'></span> Share
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> Sync
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-bell'></span>
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <!--<div class=" form-control">-->
+                    <!--<span class="glyphicon glyphicon-search"></span>-->
+                    <input class="form-control glyphicon-search" type="text" placeholder="Search" />
+                    <!-- </div> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
